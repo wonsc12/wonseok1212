@@ -188,20 +188,9 @@ body {
   content: "|";
   font-size: 20px;
   color: red;
-  -webkit-animation-name: cusor;
-          animation-name: cusor;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes cusor {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  animation-name: cusor;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 @keyframes cusor {
   0% {
