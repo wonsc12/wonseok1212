@@ -73,6 +73,16 @@ let secStart = [];
     
     
         }
+        else if(scTop > secStart[3] && scTop < secStart[4]){
+            sections[3].classList.add("move");
+    
+    
+        }
+        else if(scTop > secStart[4] && scTop < secStart[5]){
+            sections[4].classList.add("move");
+    
+    
+        }
         
         
     
