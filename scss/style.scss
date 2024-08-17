@@ -9,7 +9,7 @@ body { line-height:1; overflow-x: hidden; }
 
 
 
-.header {   position: fixed; display: flex; justify-content: center; align-items: center; width: 100%; margin: 0 auto; z-index: 99; padding:13px 0; 
+.header {   position: fixed; display: flex; justify-content: center; align-items: center; width: 100%; margin: 0 auto; z-index: 99; padding:13px 0;  
   .center { transition: all; border-radius: 40px;  width: 63%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; background-color:  rgba(0,0,0,0.6);
     .logo {  margin: 0 20px;
       h2 { line-height: 80px; 
@@ -39,8 +39,8 @@ body { line-height:1; overflow-x: hidden; }
   }     
 }
 
-.header.fixer{line-height: 80px;  position: fixed; top:-13px; bottom: unset; display: block;justify-content: center; width: 100%; z-index: 99; ;padding:13px 0;
-    .center{ border-radius: 0px; width: 100%;    display: flex; justify-content: center;
+.header.fixer{line-height: 80px;  position: fixed; top:-13px; bottom: unset; display: block;justify-content: center; width: 100%; z-index: 99; ;padding:13px 0; 
+    .center{ border-radius: 0px; width: 100%;    display: flex; justify-content: center; 
         .logo { 
             h2 { 
                 a { color: #fff;}
@@ -90,100 +90,120 @@ body { line-height:1; overflow-x: hidden; }
     }
     
     
-    .cont2 {  
-        
-      width: 100%; height: 80vh; display: flex; align-items: center; background-color: #fafafa;    
-      .skill {width: 100%; display: flex; justify-content: center;  
-        .center2 {  text-align: center; width: 70%;
-            
-          .text3 { margin-bottom: 100px;
-              h2 {  font-size: 34px; font-weight: bold;}
-              p {margin: 18px 0 28px 0; color: #bcbcbc;
-              
-              }
-              &::after {content: ""; display: inline-block; width: 80px; height: 2px ; background-color: #bcbcbc;
-                        margin-bottom: 79px;
-              }
-          }
-          .box4 { margin: 0 auto; width: 100%;   display: flex; flex-wrap: wrap; opacity: 0;transition: all 2s; transform:translateY(-150px);
-            .box { width: 23%; margin: 0 1%;   background-color: #fff; margin: 10px 10px;
-                
-                i { font-size: 60px; margin: 38px 0 27px 0; color: #bcbcbc;
-                &:hover {color: red;}
-                
-                }
-                h2 { font-size: 20px; margin: 20px 0 20px 0; }
-                p { font-size: 15px; line-height: 30px; margin-bottom: 30px; width: 80%;margin: 0 auto;}
-              
-              &:nth-child(2) {
-                  i {}
-                  &:hover i {color: blue;}
-              }    
-              &:nth-child(3) {
-                  i {}
-                  &:hover i {color:gold;}
-              }    
-              &:nth-child(4) {
-                  i {}
-                  &:hover i {color: green;}
-              }    
+    .cont2 {
+      padding: 200px 0;
+      background-color: #141416;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+
+      .center {
+          width: 83%;
+
+          .titleWrap {
+              font-size: 50px;
+              color: #fff;
+              margin-bottom: 50px;
+
+              &::after {
+                  content: "";
+                  display: block;
+                  width: 156px;
+                  height: 5px;
+                  margin-top: 5px;
+                  background-color: #026793;
               }
           }
-        }
-      }        
-    }
+
+          .contextWrap {
+              display: flex;
+              justify-content: space-between;
+
+              .leftWrap {
+                  width: 40%;
+                  font-family: 'SUITE-Regular';
+
+                  .topWrap {
+                      margin-bottom: 50px;
+                      h4 {
+                          font-size: 30px;
+                          line-height: 40px;
+                          margin-bottom: 40px;
+
+                          span {
+                              color: #026793;
+                          }
+                      }
+
+                      p {
+                          font-size: 18px;
+                          line-height: 28px;
+                      }
+                  }
+
+                  .botWrap {
+                      h4 {
+                          font-size: 20px;
+                          margin-bottom: 30px;
+                          font-family: 'SUITE-Regular';
+                      }
+
+                      .iconWrap {
+                          display: flex;
+                          align-items: center;
+                          flex-wrap: wrap;
+
+                          >div {
+                              width: 33.333333%;
+                              display: flex;
+                              align-items: center;
+                              margin-bottom: 20px;
+
+                              img {
+                                  width: 40px;
+                                  padding-right: 15px;
+                              }
+
+                              p {
+                                  font-size: 18px;
+                              }
+                          }
+                      }
+                  }
+
+              }
+
+              .rightWrap {
+                  width: 55%;
+                  position: relative;
+                  img {
+                      position: relative;
+                      width: 100%;
+                      height: 550px;
+                      object-fit: cover;
+                      z-index: 5;
+                  }
+                  &::after {
+                      content: "";
+                      display: block;
+                      background-color: #026793;
+                      width: 100%;
+                      height: 550px;
+                      position: absolute;
+                      bottom: -10px;
+                      right: -15px;
+                  }
+              }
+          }
+      }
+  } 
     
-    .cont2.move .skill .center2 .box4{opacity: 1; transform: translateY(0px);}
-    .cont3 {  
-        
-      width: 100%; height: 80vh; display: flex; align-items: center; background-color: #fafafa;    
-      .skill {width: 100%; display: flex; justify-content: center;  
-        .center2 {  text-align: center; width: 70%;
-            
-          .text3 { margin-bottom: 100px;
-              h2 {  font-size: 34px; font-weight: bold;}
-              p {margin: 18px 0 28px 0; color: #bcbcbc;
-              
-              }
-              &::after {content: ""; display: inline-block; width: 80px; height: 2px ; background-color: #bcbcbc;
-                        margin-bottom: 79px;
-              }
-          }
-          .box4 { margin: 0 auto; width: 100%;   display: flex; flex-wrap: wrap; opacity: 0;transition: all 2s; transform:translateY(-150px);
-            .box { width: 23%; margin: 0 1%;   background-color: #fff; margin: 10px 10px;
-                
-                i { font-size: 60px; margin: 38px 0 27px 0; color: #bcbcbc;
-                &:hover {color: red;}
-                
-                }
-                h2 { font-size: 20px; margin: 20px 0 20px 0; }
-                p { font-size: 15px; line-height: 30px; margin-bottom: 30px; width: 80%;margin: 0 auto;}
-              
-              &:nth-child(2) {
-                  i {}
-                  &:hover i {color: blue;}
-              }    
-              &:nth-child(3) {
-                  i {}
-                  &:hover i {color:gold;}
-              }    
-              &:nth-child(4) {
-                  i {}
-                  &:hover i {color: green;}
-              }    
-              }
-          }
-        }
-      }        
-    }
-    
-    .cont3.move .skill .center2 .box4{opacity: 1; transform: translateY(0px);}     
-    .cont4 {
+    // .cont2.move .skill .center2 .box4{opacity: 1; transform: translateY(0px);}    
+    .cont3 {
         height: 150px;  background-color:  rgba(0,0,0,0.6);
     }
-    
   }
-    .cont5 { width: 100%; height: 100vh;   display: flex;  
+    .cont4 { width: 100%; height: 100vh;   display: flex;  
       .center { width: 80%; margin: 0 auto;
           
         .titletext {  text-align: center; margin: 100px 0; 
@@ -221,10 +241,11 @@ body { line-height:1; overflow-x: hidden; }
               p{ margin-bottom: 25px; font-weight: bold; font-size: 18px;
                   span { font-weight: lighter;}
               }
-              .tt5 { line-height: 25px;} 
+              .tt5 { line-height: 25px; font-size: 17px;} 
               .tt6 { 
                   span { font-weight: bold;}
               } 
+              .tt7 { font-size: 17px;} 
               .tt3 { 
                   span { 
                       a { color: #000;}
@@ -236,17 +257,17 @@ body { line-height:1; overflow-x: hidden; }
         }  
       }
     }
-    .cont5.move .center .tabCont .tabSet .image {opacity: 1; transform: translateX(0px);}    
-    .cont5.move .center .tabCont .tabSet .box {opacity: 1; transform: translateX(0px);} 
-    .cont6 { width: 100%; height: 100vh;   display: flex;  
-      .center { width: 80%; margin: 0 auto;
+    .cont4.move .center .tabCont .tabSet .image {opacity: 1; transform: translateX(0px);}    
+    .cont4.move .center .tabCont .tabSet .box {opacity: 1; transform: translateX(0px);} 
+    .cont5 { width: 100%; height: 100vh;   display: flex;  
+      .center { width: 80%; margin: 50px auto;
           
         .titletext {  text-align: center; margin: 100px 0; 
             .title { font-size: 45px;}
             .subtitle { }
         }
         .Wrap { width: 100%; margin: 0 auto;
-            .tabMenu2 { display: flex; justify-content: space-between; width: 30%; margin: 100px auto;
+            .tabMenu2 { display: flex; justify-content: space-between; width: 40%; margin: 100px auto;
                 li {width:160px;line-height: 50px; height:50px; text-align: center;
                 
                     a {background-color: #fff; color:#000; 
@@ -276,10 +297,12 @@ body { line-height:1; overflow-x: hidden; }
               p{ margin-bottom: 25px; font-weight: bold; font-size: 18px;
                   span { font-weight: lighter;}
               }
-              .tt5 { line-height: 25px;} 
+              .tt5 { line-height: 25px; font-size: 17px;}
+              .tt4 { line-height: 25px; }  
               .tt6 { 
                   span { font-weight: bold;}
               } 
+              
               .tt3 { 
                   span { 
                       a { color: #000;}
@@ -291,9 +314,9 @@ body { line-height:1; overflow-x: hidden; }
         }  
       }
     }
-    .cont6.move .center .tabCont .tabSet2 .image {opacity: 1; transform: translateX(0px);}    
-    .cont6.move .center .tabCont .tabSet2 .box {opacity: 1; transform: translateX(0px);}       
-    .cont7 {  margin-top: 150px; 
+    .cont5.move .center .tabCont .tabSet2 .image {opacity: 1; transform: translateX(0px);}    
+    .cont5.move .center .tabCont .tabSet2 .box {opacity: 1; transform: translateX(0px);}       
+    .cont6 {  margin-top: 150px; 
       background: rgb(96,246,69);  background: linear-gradient(39deg, rgba(96,246,69,0.8939950980392157) 12%, rgba(28,147,196,0.8239670868347339) 66%);
         width: 100%; height: 450px;   display: flex; align-items: center; justify-content: center;
       .center { 
@@ -304,7 +327,7 @@ body { line-height:1; overflow-x: hidden; }
       }    
     }
     
-    .cont7.move{}
+    .cont6.move{}
 
 .footer {  background-color: #f8f6f5; padding: 30px 0; position: relative;
   display: flex; justify-content: center;
